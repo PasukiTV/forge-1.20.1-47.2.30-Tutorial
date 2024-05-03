@@ -1,4 +1,4 @@
-package net.pasuki.mccourse.item;
+package net.pasuki.mccourse;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -7,8 +7,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import net.pasuki.mccourse.MCCourseMod;
 import net.pasuki.mccourse.block.ModBlocks;
+import net.pasuki.mccourse.item.ModItems;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -29,7 +29,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get());
                         output.accept(ModBlocks.END_STONE_ALEXANDRITE_ORE.get());
                         output.accept(ModBlocks.NETHER_ALEXANDRITE_ORE.get());
-
                         output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
 

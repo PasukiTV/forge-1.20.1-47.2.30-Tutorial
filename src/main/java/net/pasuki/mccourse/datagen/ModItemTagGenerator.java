@@ -10,9 +10,10 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("NullableProblems")
 public class ModItemTagGenerator extends ItemTagsProvider {
     public ModItemTagGenerator(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider,
-                               CompletableFuture<TagLookup<Block>> pBlockTags, @Nullable ExistingFileHelper existingFileHelper) {
+                               CompletableFuture<TagLookup<Block>> pBlockTags, ExistingFileHelper existingFileHelper) {
         super(pOutput, pLookupProvider, pBlockTags, MCCourseMod.MOD_ID, existingFileHelper);
     }
 
