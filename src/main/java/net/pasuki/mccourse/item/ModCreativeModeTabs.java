@@ -8,7 +8,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.pasuki.mccourse.MCCourseMod;
+import net.pasuki.mccourse.Registration;
 import net.pasuki.mccourse.block.ModBlocks;
+import net.pasuki.mccourse.block.custom.GeneratorBlock;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -32,6 +34,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
+                        output.accept(Registration.GENERATOR_BLOCK.get());
 
 
                     }).build());

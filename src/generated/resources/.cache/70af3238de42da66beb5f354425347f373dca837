@@ -1,1 +1,6 @@
-// 1.20.1	2024-05-03T21:05:47.7657221	Block Tags
+// 1.20.1	2024-05-04T00:01:23.9425783	Block Tags
+16bc8d1b9b571914b59b5fad5f245361e5bfe539 data/mccourse/tags/blocks/alexandrite_ores.json
+55a7772008eaa76d8ff2321f79b46e30c458d13b data/mccourse/tags/blocks/metal_detector_valuables.json
+3e0b37fa41330d1f7344ba42e617047e485cce7b data/minecraft/tags/blocks/mineable/pickaxe.json
+6dd642dc4bc8d0a18816d1f9abf49125ed509a2b data/minecraft/tags/blocks/needs_diamond_tool.json
+56729f69cc4b15a2cbb2f916eef03c49f6e390ed data/minecraft/tags/blocks/needs_iron_tool.json

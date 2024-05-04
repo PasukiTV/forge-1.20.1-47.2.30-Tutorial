@@ -12,6 +12,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.pasuki.mccourse.block.ModBlocks;
+import net.pasuki.mccourse.block.entity.ModBlockEntities;
 import net.pasuki.mccourse.item.ModItems;
 import org.slf4j.Logger;
 
@@ -20,17 +21,19 @@ import org.slf4j.Logger;
 @Mod(MCCourseMod.MOD_ID)
 public class MCCourseMod
 {
-    // Define mod id in a common place for everything to reference
+
     public static final String MOD_ID = "mccourse";
-    // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    {
+    public MCCourseMod(){
+
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        Registration.init(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

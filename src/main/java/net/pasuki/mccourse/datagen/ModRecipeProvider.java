@@ -15,6 +15,7 @@ import net.pasuki.mccourse.item.ModItems;
 import java.util.List;
 import java.util.function.Consumer;
 
+@SuppressWarnings("NullableProblems")
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> ALEXANDRITE_SMELTABLES = List.of(
             ModItems.RAW_ALEXANDRITE.get(),

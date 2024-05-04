@@ -10,6 +10,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.pasuki.mccourse.util.ModTags;
 
 
 public class MetalDetectorItem extends Item {
@@ -56,8 +57,6 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockState) {
-        return blockState.is(Blocks.IRON_ORE)
-                || blockState.is(Blocks.DEEPSLATE_IRON_ORE)
-                || blockState.is(Blocks.DIAMOND_ORE);
+        return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 }

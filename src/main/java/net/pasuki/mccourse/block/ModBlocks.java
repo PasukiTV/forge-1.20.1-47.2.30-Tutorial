@@ -87,6 +87,7 @@ public class ModBlocks {
             ()-> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
             ));
 
+
     public static final RegistryObject<Block> ALEXANDRITE_LAMP = registerBlock("alexandrite_lamp",
             ()-> new AlexandriteLampBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BLUE)

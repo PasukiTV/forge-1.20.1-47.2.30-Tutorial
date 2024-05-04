@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "mccourse:block/machine_bottom",
+    "east": "mccourse:block/machine_side",
+    "north": "mccourse:block/generator_block_on",
+    "particle": "mccourse:block/machine_side",
+    "south": "mccourse:block/machine_side",
+    "up": "mccourse:block/machine_top",
+    "west": "mccourse:block/machine_side"
+  }
+}
